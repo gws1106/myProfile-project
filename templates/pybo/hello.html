@@ -1,0 +1,65 @@
+<!-- html은 뼈 구조 -->
+
+<!-- static파일(css파일, img파일 등 정적인 파일)을 불러오는과정 -->
+<!-- ?after를 통해 css파일이 적용된 것을 새로고침을 통해 확인 가능 변경안될시 강력 새로고침 사용 -->
+{% load static %}
+<link rel="stylesheet" href="{% static './css/styles.css' %}?after">   
+
+
+<html>
+<head>
+
+	<META http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Geon woo profile</title>
+   	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+	<div class="myHeader1">
+		<h1 id="myHeader1">Welcome! <br> mycity </h1>
+	</div>
+	
+	<p id="demo"> 방문 후 좋아요 </p>
+	<button onclick='document.getElementById("demo").innerHTML = "좋아요 완료!"';> 
+		좋아요
+	</button>
+
+	<button onclick='document.getElementById("demo").innerHTML = "좋아요 취소 완료 !"';>
+		좋아요 취소
+	</button>
+
+	
+	<p id = "test1"> 지금시간 몰라욥! </p> 
+	<button onclick="document.getElementById('test1').innerHTML=Date()"> 
+		현재시각
+	</button>
+
+
+	<div class="myHeader2">
+		<p> 
+			신건우 <br> age 26 <br> <em>cloud engineer</em> <br> 
+			<a href="https://github.com/gws1106/">github site</a>
+			<a href="https://www.notion.so/Resume-de26ca58274e460bbd8fa1d619122009">notion site</a>
+		</p>
+	</div>
+
+	<div class="myHeader3">
+
+		<p>
+			my friend <strong>golden retriever</strong>
+		</p>
+	</div>
+
+    <img src="{%static './images/puppy1.png' %}" width="500" height="300">
+
+	<script>
+		
+	</script>
+
+
+</body>
+
+
+</html>

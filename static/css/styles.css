@@ -1,0 +1,26 @@
+body {
+	background-color:skyblue;
+}
+
+
+.myHeader1 {
+	background-image: url('../images/cloud1.png');
+ 	color:deepskyblue;
+	padding: 40px;
+	text-align: center;
+	
+}
+
+.myHeader2 {
+	color: black;
+	padding: 40px;
+	text-align: center;
+	border: 1px solid black;
+	 margin: 10px;
+  	padding: 10px;
+}
+
+.myHeader3 {
+	color: gold;
+}
+
