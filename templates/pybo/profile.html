@@ -1,0 +1,153 @@
+{% load static %}
+<link rel="stylesheet" href="{% static './css/profile.css' %}?after">
+
+<html>
+
+    <head>
+        <META charset="utf-8">
+        <title>Geonu profile</title>
+        <link rel="stylesheet" href="profile.css?after">
+        <!-- <script src="https://kit.fontawesome.com/6f59774d49.js" crossorigin="anonymous"></script> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Oswald:wght@500&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+        <header>
+        </header>
+        <!-- navigation -->
+        <nav class="menu-bar">
+            <div class="index">
+                <div class="img">
+                    <img id="mymoticon" src="{%static './images/memoticon.jpg' %}">
+                </div>
+                <br>
+                <h3 class="click">ABOUT</h3>
+                <h3 class="click">EXPERIENCE</h3>
+                <h3 class="click">EDUCATION</h3>
+                <h3 class="click">INTERESTS</h3>
+            </div>
+        </nav>
+
+
+        <!-- ABOUT 섹션 -->
+        <section class="about">
+            <!-- 이름 -->
+            <header class="name">
+                <p><span>Eng: EUGENE</span>&nbsp<span style="color: #5686e4;"> <br> Kor: GEONU SHIN</span></p>
+                <div class="contacts">
+                    <p>🎂1998.11.06</p>
+                    <p>📞+(82)10-2855-9215</p>
+                    <p>📧gw110665@gmail.com</p>
+                </div>
+            </header>
+            <br><br>
+
+            <article class="main-introduction">
+                <p>안녕하세요 저는 멀티잇 클라우드 서비스 개발자 취업캠프 6기 신건우 입니다. <br>
+                    저는 대학교에서 클라우드 관련 학부연구생을 진행하며 클라우드 서비스에 대한 흥미가 생겨 교육을 신청하였습니다.</p>
+                <br>
+                <p style="opacity: 1">스크롤을 내리시면 저에대해 더 알 수 있습니다</p>
+            </article>
+            <br><br>
+
+            <footer class="sns-pictogram">
+                <div class="mysite"> Mysites & Email</div>
+                <br>
+                <a href="https://github.com/gws1106/"><i class="fa-brands fa-github fa-4x"></i></a>
+                <a href="https://gw110665@gmail.com"><i class="fa-solid fa-envelope fa-4x"></i></a>
+            </footer>
+        </section>
+
+        <section class="experience">
+            <div class="contents1">
+                <p class="title"><span>Undergraduate</span>&nbsp <span style="color:#bf4401;">Research student</span></p>
+                <div class="research"><span style="color:#adadad">Research interest: Cloud
+                    Project title: N/A <br>
+                    Joined in Jul. 2022 and left Feb. 2023 <br>
+                    Notes: I came in as an undergraduate research student and studied on utilizing a cloud SaaS performance evaluation tool.<br>
+                </span></div>
+            </div>
+        </section>
+
+
+        <section class="education">
+            <div class="contents1">
+                <p class="title"><span>Sungkyul</span>&nbsp<span style="color: #bf4401;">University</span>&nbsp<span
+                        class="year">~2021.12</span></p>
+                <div class="sub_title"><span style="color: #adadad;">Information and communication engineering</span></div>
+                <img src="{%static './images/SungkyulUniversity.png' %}">
+            </div>
+
+
+            <div class="contents2">
+                <p class="title"><span>Incheon</span>&nbsp<span style="color: #bf4401;">University</span>&nbsp<span
+                        class="year">~2023.08</span></p>
+                <div class="sub_title"><span style="color: #adadad;">Information and communication engineering</span></div>
+                <img src="{%static './images/IncheonUniversity.jpg' %}">
+            </div>
+
+            <div class="contents3">
+                <p class="title"><span>Multi</span>&nbsp<span style="color:#bf4401;">Campus</span>&nbsp<span class="year">~2023.08.08</span></p>
+                <img src="{%static './images/multicampus.jpg' %}">
+            </div>
+        </section>
+
+        <section class="interests">
+            <header>
+                <p style="margin: 10px;" class="whatilove-text"><span>WHAT</span>&nbsp<span style="color: #bf4401;">I
+                        LOVE</span></p>
+            </header>
+            <article>
+                <div class="whatilove-img">
+                    <img src="{%static './images/puppy1.png' %}">
+                    <img src="{%static './images/coldplay.jpg' %}">
+                    <img src="{%static './images/oasis.jpg' %}">
+                    <img src="{%static './images/radiohead.jpg' %}">
+                    <img src="{%static './images/swim.jpg' %}">
+                </div>
+                <p class="comment">My love❤<br>
+                    :retriever, coldplay's music, oasis, radiohead, swimming</p>
+            </article>
+
+        </section>
+
+
+       
+
+
+
+        <script type="text/javascript">
+            const clicks = document.querySelectorAll(".click")
+            const sections = document.querySelectorAll("section")
+            const firstTop = sections[0].offsetTop
+            const secondTop = sections[1].offsetTop
+            const thirdTop = sections[2].offsetTop
+            const fourthTop = sections[3].offsetTop
+
+
+            clicks[0].onclick = function() {
+            window.scroll({top: firstTop, behavior: 'smooth'})
+            }
+            clicks[1].onclick = function() {
+            window.scroll({top: secondTop, behavior: 'smooth'})
+            }
+            clicks[2].onclick = function() {
+            window.scroll({top: thirdTop, behavior: 'smooth'})
+            }
+            clicks[3].onclick = function() {
+            window.scroll({top: fourthTop, behavior: 'smooth'})
+            }
+        </script>
+
+
+
+
+    </body>
+
+</html>
